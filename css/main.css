@@ -37,7 +37,6 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 50px;
         width: 200px;
-        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 2px 0;
@@ -76,7 +75,6 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 60px;
         width: 240px;
-        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 17px 0;
@@ -115,7 +113,6 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 80px;
         width: 320px;
-        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 22px 0;
