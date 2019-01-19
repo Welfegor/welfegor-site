@@ -1,0 +1,210 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font: 1.15rem 'PT Serif', serif;
+}
+
+* a {
+    text-decoration: none;
+    color: #fff;
+    transition: background .1s;
+}
+
+/* Future gradients: 
+#00c3ff #ffff1c
+#ff00cc #333399
+#de6161 #2657eb
+#000000 #434343
+*/
+
+
+/* Media query for less then 1023px devices */
+@media (max-width: 1023px) {
+    .wrapper {
+        background-color: #100e17;
+        min-height: 100vh;
+        display: grid;
+        grid-template: 60px 3fr 2fr 1fr 60px / repeat(12, 1fr);
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m m m m m"
+                             "s s s s s s s s s s s s"
+                             "c c c c c c c c c c c c"
+                             "f f f f f f f f f f f f";
+    }
+    .wrapper nav {
+        display: none;
+    }
+    .wrapper > header .logo a picture img {
+        height: 50px;
+        width: 200px;
+    }
+    .wrapper > header .logo {
+        padding: 2px 0;
+        transition: padding .5s;
+    }
+}
+
+/* Media query for 1024px devices */
+@media (min-width: 1024px) {
+    .wrapper {
+        background-color: #100e17;
+        min-height: 100vh;
+        display: grid;
+        grid-template: 100px 3fr 1fr 100px / repeat(12, 1fr);
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m m s s s"
+                             "c c c c c c c c c s s s"
+                             "f f f f f f f f f f f f";
+    }
+    .wrapper > header nav {
+        grid-column: 4 / 11;
+    }
+    .wrapper > header .search {
+        grid-column: 11 / 13;
+    }
+    .wrapper > header nav ul,
+    .wrapper > header nav ul li,
+    .wrapper > header nav ul li a,
+    .wrapper > header .logo a {
+        height: 100px;
+    }
+    .wrapper > header nav ul li picture img {
+        height: 50px;
+        width: 60px;
+    }
+    .wrapper > header .logo a picture img {
+        height: 60px;
+        width: 240px;
+    }
+    .wrapper > header .logo {
+        padding: 17px 0;
+        transition: padding .5s;
+    }
+}
+
+/* Media query for 1440px devices */
+@media (min-width: 1440px) {
+    .wrapper {
+        background-color: #100e17;
+        min-height: 100vh;
+        display: grid;
+        grid-template: 130px 3fr 1fr 130px / repeat(12, 1fr);
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m m s s s"
+                             "c c c c c c c c c s s s"
+                             "f f f f f f f f f f f f";
+    }
+    .wrapper > header nav {
+        grid-column: 4 / 9;
+    }
+    .wrapper > header .search {
+        grid-column: 9 / 13;
+    }
+    .wrapper > header nav ul,
+    .wrapper > header nav ul li,
+    .wrapper > header nav ul li a,
+    .wrapper > header .logo a {
+        height: 130px;
+    }
+    .wrapper > header nav ul li picture img {
+        height: 65px;
+        width: 78px;
+    }
+    .wrapper > header .logo a picture img {
+        height: 80px;
+        width: 320px;
+    }
+    .wrapper > header .logo {
+        padding: 22px 0;
+        transition: padding .5s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper > header {
+    grid-area: h;
+    display: grid;
+    grid-template: 1fr / repeat(12, 1fr);
+    border-bottom: 2px solid #201c29;
+}
+
+/* Settings for header logo */
+.wrapper > header .logo {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+/* Start Nav menu settings */
+.wrapper > header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.wrapper > header nav ul li {
+    flex: 1;
+}
+
+.wrapper > header nav ul li a {
+    border-left: 1px solid #201c29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid #201c29;
+}
+
+.wrapper > header nav ul li a:hover {
+    background-color:#251F2D;
+}
+/* End Nav menu settings */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper > main {
+    grid-area: m;
+}
+
+.wrapper > aside {
+    grid-area: s;
+}
+
+.contacts {
+    grid-area: c;
+}
+
+.wrapper > footer {
+    grid-area: f;
+}
