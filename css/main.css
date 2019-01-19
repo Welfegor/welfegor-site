@@ -37,9 +37,11 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 50px;
         width: 200px;
+        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 2px 0;
+        transition: padding .5s;
     }
 }
 
@@ -54,9 +56,6 @@ html, body {
                              "m m m m m m m m m s s s"
                              "c c c c c c c c c s s s"
                              "f f f f f f f f f f f f";
-    }
-    .wrapper nav {
-        display: hidden;
     }
     .wrapper > header nav {
         grid-column: 4 / 11;
@@ -77,9 +76,11 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 60px;
         width: 240px;
+        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 17px 0;
+        transition: padding .5s;
     }
 }
 
@@ -94,9 +95,6 @@ html, body {
                              "m m m m m m m m m s s s"
                              "c c c c c c c c c s s s"
                              "f f f f f f f f f f f f";
-    }
-    .wrapper nav {
-        display: hidden;
     }
     .wrapper > header nav {
         grid-column: 4 / 9;
@@ -117,9 +115,11 @@ html, body {
     .wrapper > header .logo a picture img {
         height: 80px;
         width: 320px;
+        transition: height, width .5s;
     }
     .wrapper > header .logo {
         padding: 22px 0;
+        transition: padding .5s;
     }
 }
 
@@ -200,7 +200,7 @@ html, body {
     grid-area: m;
 }
 
-.wrapper > section {
+.wrapper > aside {
     grid-area: s;
 }
 
