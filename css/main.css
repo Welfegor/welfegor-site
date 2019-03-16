@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font: 1.15rem 'PT Serif', serif;
+    color: #fff;
 }
 
 * a {
@@ -9,12 +10,52 @@ html, body {
     color: #fff;
 }
 
-/* Future gradients: 
-#00c3ff #ffff1c
-#ff00cc #333399
-#de6161 #2657eb
-#000000 #434343
-*/
+/* Start tooltip settings */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip:before,
+.tooltip:after {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: 15px;
+    transition: opacity .3s;
+    left: 50%;
+}
+
+.tooltip:before {
+    content: attr(data-title);
+    width: 250px;
+    height: auto;
+    background-color: rgba(0, 0, 0, .9);
+    bottom: 30px;
+    margin-left: -125px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip:after {
+    content: "";
+    border-top: 10px solid rgba(0, 0, 0, .9);
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    bottom: 20px;
+    margin-left: -10px;
+}
+/* End tooltip settings */
 
 .wrapper > header {
     grid-area: h;
