@@ -1,9 +1,9 @@
-main {
-	/* background: linear-gradient(-45deg, #E4BE9A, #EFDED7); */
-	background: linear-gradient(-45deg, #8EC4EA, #D2E8F5);
+nav ul li a.nav_system {
+	background: linear-gradient(#100e17 50%, #251F2D 120%);
 }
 
 .window {
+	background: linear-gradient(-45deg, #8EC4EA, #D2E8F5);
 	margin: 10px;
 	padding: 20px;
 	border: 2px solid #000;
@@ -21,4 +21,22 @@ section {
 
 .transfer {
 	font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+    .wrapper {
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m s s s s"
+                             "c c c c c c c c s s s s"
+                             "f f f f f f f f f f f f";
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m s s s s"
+                             "c c c c c c c c s s s s"
+                             "f f f f f f f f f f f f";
+    }
 }
