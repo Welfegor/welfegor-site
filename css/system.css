@@ -23,6 +23,16 @@ section {
 	font-weight: bold;
 }
 
+@media (max-width: 500px) {
+    .window {
+        margin: 5px;
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+}
+
 @media (min-width: 1440px) {
     .wrapper {
         grid-template-areas: "h h h h h h h h h h h h"
