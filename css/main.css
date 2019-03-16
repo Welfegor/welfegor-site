@@ -42,7 +42,9 @@ html, body {
 }
 
 .tooltip:hover:before,
-.tooltip:hover:after  {
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
     opacity: 1;
     visibility: visible;
 }
