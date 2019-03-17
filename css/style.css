@@ -1,9 +1,4 @@
+/* Mark for selected item (home) */
 nav ul li a.nav_home {
 	background: linear-gradient(#100e17 50%, #251F2D 120%);
-}
-
-.picture {
-	width: 20px;
-	height: 20px;
-	background-color: #000;
 }
