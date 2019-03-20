@@ -35,6 +35,10 @@ nav ul li a.nav_system {
     .section {
         padding: 15px;
     }
+    .tooltip:before {
+        width: 200px;
+        margin-left: -100px;
+    }
 }
 
 /* For devices with 1024px+ width */
