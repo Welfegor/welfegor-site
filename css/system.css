@@ -36,8 +36,8 @@ nav ul li a.nav_system {
         padding: 15px;
     }
     .tooltip:before {
-        width: 200px;
-        margin-left: -100px;
+        width: 180px;
+        margin-left: -90px;
     }
 }
 
