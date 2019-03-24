@@ -31,6 +31,7 @@ aside .window {
 
 aside .window .section ul li {
     letter-spacing: -1px;
+    color: #000;
 }
 
 /* Start adaptive styles for "The gamer" system */
