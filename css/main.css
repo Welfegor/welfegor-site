@@ -14,7 +14,7 @@ html, body {
 /* Main wrapper styles */
 .wrapper {
     background-color: #100e17;
-    min-height: 100vh;
+    min-height: 101vh;
     display: grid;
 }
 
