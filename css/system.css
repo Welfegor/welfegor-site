@@ -19,7 +19,13 @@ nav ul li a.nav_system {
 }
 
 aside .window {
-    background: linear-gradient(-45deg, #F0B68E, #F8DECD);
+    background: linear-gradient(-45deg, #FE8703, #E2324D);
+    color: #fff;
+}
+
+aside .transfer {
+    text-shadow: 2px 2px 1px #000;
+    padding: 2px;
 }
 
 /* Styles for each subwindow */
@@ -31,7 +37,8 @@ aside .window {
 
 aside .window .section ul li {
     letter-spacing: -1px;
-    color: #000;
+    text-shadow: 2px 2px 1px #333;
+    padding: 2px;
 }
 
 /* Start adaptive styles for "The gamer" system */
