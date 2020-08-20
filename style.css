@@ -21,7 +21,6 @@ div.text-wrap {
 pre.text {
 	padding: 50px 50px;
 	margin: 0;
-	font-size: calc(1em * 0.875);
 	line-height: 1.6;
 	white-space: pre-wrap;
 	font-family: sans-serif;
