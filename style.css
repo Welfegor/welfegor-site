@@ -1,0 +1,30 @@
+body {
+	background-color: #f2f2f2;
+	padding: 0;
+	margin: 0;
+}
+
+
+div.content {
+	text-align: center;
+} 
+
+div.text-wrap {
+	width: 800px;
+	min-height: 100vh;
+	max-height: auto;
+	background-color: #fff;
+	display: inline-block;
+	text-align: left;
+}
+
+pre.text {
+	padding: 50px 50px;
+	margin: 0;
+	font-weight: 400;
+	font-style: italic;
+	font-family: Merriweather,serif;
+	font-size: 18px;
+	white-space: pre-wrap;
+	line-height: 1.8;
+}
