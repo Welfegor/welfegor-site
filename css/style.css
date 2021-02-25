@@ -1,0 +1,4 @@
+/* Mark for selected item (home) */
+nav ul li a.nav_home {
+	background: linear-gradient(#100e17 50%, #251F2D 120%);
+}

@@ -1,0 +1,79 @@
+/* Mark for selected item (system) */
+nav ul li a.nav_system {
+	background: linear-gradient(#100e17 50%, #251F2D 120%);
+}
+
+/* Style for bold text */
+.transfer {
+    font-weight: bold;
+}
+
+/* Main styles for gamer's window */
+.window {
+	background: linear-gradient(-45deg, #8EC4EA, #D2E8F5);
+	margin: 10px;
+	padding: 20px;
+	border: 2px solid #000;
+    color: #000;
+    font-size: 1.265rem;
+}
+
+aside .window {
+    background: linear-gradient(-45deg, #FE8703, #E2324D);
+    color: #fff;
+}
+
+aside .transfer {
+    text-shadow: 2px 2px 1px #000;
+    padding: 2px;
+}
+
+/* Styles for each subwindow */
+.section {
+	padding: 25px;
+	border: 2px solid #000;
+	margin-bottom: 20px;
+}
+
+aside .window .section ul li {
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 1px #333;
+    padding: 2px;
+}
+
+/* Start adaptive styles for "The gamer" system */
+/* For devices with width less then 500px(Iphone 5, in general(320px)) */
+@media (max-width: 500px) {
+    .window {
+        margin: 5px;
+        padding: 10px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .tooltip:before {
+        width: 180px;
+        margin-left: -90px;
+    }
+}
+
+/* For devices with 1024px+ width */
+@media (min-width: 1024px) {
+    .wrapper {
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m s s s s"
+                             "c c c c c c c c s s s s"
+                             "f f f f f f f f f f f f";
+    }
+}
+
+/* For devices with 1440px+ width */
+@media (min-width: 1440px) {
+    .wrapper {
+        grid-template-areas: "h h h h h h h h h h h h"
+                             "m m m m m m m m s s s s"
+                             "c c c c c c c c s s s s"
+                             "f f f f f f f f f f f f";
+    }
+}
+/* End adaptive styles for "The gamer" system */
